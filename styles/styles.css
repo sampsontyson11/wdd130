@@ -1,10 +1,26 @@
+nav {
+
+}
+
+nav a {
+
+}
+
+h1 {
+
+}
+
+img {
+
+}
+
 main {
     max-width: 840px;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem:
+    margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2); 
     padding: 1rem;
     background-color: #eee; 
@@ -31,4 +47,5 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
 
