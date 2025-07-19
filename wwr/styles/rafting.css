@@ -1,0 +1,44 @@
+:root {
+    --primary-color:#8F857D (Muted brownish-gray)
+    --secondary-color:#DECBB7 (Soft beige/cream)
+    --accent1-color:#F7F0F5 (Light pastel pinkish tint)
+    --accent2-color:#5C5552 (Dark grayish brown)
+    --heading-font:'Playfair Display', serif;
+    --body-font:'Raleway', sans-serif;
+}
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+.socialmedia a {
+    text-decoration: none;
+}
+.hero {
+    position: relative;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
