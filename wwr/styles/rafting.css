@@ -1,44 +1,79 @@
 :root {
-    --primary-color:#8F857D (Muted brownish-gray)
-    --secondary-color:#DECBB7 (Soft beige/cream)
-    --accent1-color:#F7F0F5 (Light pastel pinkish tint)
-    --accent2-color:#5C5552 (Dark grayish brown)
+    --primary-color:#8F857D /* Muted brownish-gray */
+    --secondary-color:#DECBB7 /* Soft beige/cream */
+    --accent1-color:#F7F0F5 /* Light pastel pinkish tint */
+    --accent2-color:#5C5552 /* Dark grayish brown */
     --heading-font:'Playfair Display', serif;
     --body-font:'Raleway', sans-serif;
 }
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
 }
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--body-font);
 }
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-.socialmedia a {
+
+a {
     text-decoration: none;
 }
+
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .hero {
     position: relative;
 }
+
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(130, 133, 133, 0.339);
+}
+
+.hero article{
+    background-color: rgba(141, 145, 145, 0.421);
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    right: 2rem;
+}
+
+.hero article img {
+    float: right;
+    margin: 2rem;
+    width: 8rem;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--accent1-color);
+    color: rgb(252, 252, 252);
+}
+
+article p {
+    margin: 0;
+    font-size: 200%;
+    text-align: left;
+    width: 100%;
+    line-height: 1.5;
+    padding-right: 10px;
+    color: aliceblue;
 }
