@@ -1,8 +1,8 @@
 :root {
-    --primary-color:#8F857D /* Muted brownish-gray */
-    --secondary-color:#DECBB7 /* Soft beige/cream */
-    --accent1-color:#F7F0F5 /* Light pastel pinkish tint */
-    --accent2-color:#5C5552 /* Dark grayish brown */
+    --primary-color:#8F857D 
+    --secondary-color:#DECBB7 
+    --accent1-color:#F7F0F5 
+    --accent2-color:#5C5552 
     --heading-font:'Playfair Display', serif;
     --body-font:'Raleway', sans-serif;
 }
@@ -22,6 +22,67 @@ a {
 header, main, footer {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 200px auto; 
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.322);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 1rem;
+    font-family: var(--heading-font);
+    color: blueviolet;
+}
+
+nav a:hover {
+    background-color: black;
+    color: beige;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 1em;
+    margin: 50px 0;
+}
+
+.adventures {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.history h2,
+.adventures h2 {
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 1em 0;
+}
+
+figure:nth-of-type(odd) {
+    background-color: var(--accent1-color);
+    color: var(--accent1-color);
+    align-self: center;
+}
+figure:nth-of-type(even) {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    align-self: center;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1em;
 }
 
 .hero {
@@ -76,4 +137,34 @@ article p {
     line-height: 1.5;
     padding-right: 10px;
     color: aliceblue;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 100px;
+}
+
+footer p {
+    color: black;
+}
+
+footer menu {
+    color: black;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.sociallinks img {
+    width: 2rem;
+}
+
+.sociallinks a:hover {
+    background-color: unset;
 }
