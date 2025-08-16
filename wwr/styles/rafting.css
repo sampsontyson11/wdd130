@@ -271,3 +271,80 @@ footer menu {
 *               Trips Css
 *
 ******************************************************/
+main {
+    margin: 50px;
+}
+
+body {
+    padding-top: 50px;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+.trips {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.trip1, .trips, .trip3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trip1 {
+    grid-template-areas: "text image";
+}
+
+.trip1 p {
+    grid-area: text;
+}
+.trip1 img {
+    grid-area: image;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.trip2 {
+    grid-template-areas: "text image";
+}
+
+.trip2 p {
+    grid-area: text;
+}
+.trip2 img {
+    grid-area: image;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.trip3 {
+    grid-template-areas: "text image";
+}
+
+.trip3 p {
+    grid-area: text;
+}
+.trip3 img {
+    grid-area: image;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/******************************************************
+*
+*               Index CSS
+*
+******************************************************/
+
+.home {
+    margin: 50px 0;
+    text-align: center;
+}
