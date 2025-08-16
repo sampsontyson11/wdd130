@@ -34,6 +34,7 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
+    top: 1rem;
 }
 
 nav a {
@@ -45,6 +46,18 @@ nav a {
 nav a:hover {
     background-color: black;
     color: beige;
+}
+
+div, h2 {
+
+    justify-items: center;
+
+}
+
+.button-box cols4- row4 {
+
+    justify-items: center;
+
 }
 
 .history {
@@ -168,3 +181,93 @@ footer menu {
 .sociallinks a:hover {
     background-color: unset;
 }
+
+
+/******************************************************
+*
+*               CSS for Contact Us
+*
+******************************************************/
+.contact {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.contactus h1 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.contactform {
+    grid-column: 2/6;
+    grid-row: 2/4;
+}
+.address {
+    grid-column: 7/12;
+    grid-row: 2/4;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 1em;
+    padding: 1em;
+}
+
+.address h2 {
+    color: white;
+}
+
+.address a {
+    color: white;
+}
+
+.gmap {
+    border: 0;
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+}
+
+.hrule {
+    grid-column: 1/-1;
+    border: solid 10px;
+
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+    grid-column: 1/-1;
+    grid-template-rows: auto auto;
+}
+
+.employee
+{
+    margin: 0;
+}
+
+.employees h2 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    text-align: center;
+}
+
+.employee img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/******************************************************
+*
+*               Trips Css
+*
+******************************************************/
